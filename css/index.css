@@ -1,0 +1,127 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: zorque;
+    src: url(../font/zorque.ttf);
+}
+@font-face {
+    font-family: tt_commons_light;
+    src: url(../font/TT\ Commons\ Light.otf);
+}
+
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+    padding-bottom: 4em;
+}
+
+#me {
+    width: 200px;
+    margin-top: 3em;
+}
+
+#title{
+    font-family: zorque,sans-serif;
+    font-size: 3.5em;
+    margin-top: 0.5em;
+    text-align: center;
+}
+
+.sub-title{
+    font-family: tt_commons_light,sans-serif;
+    font-size: 1.5em;
+    margin-top: -1em;
+    text-align: center;
+    width: 40%;
+}
+
+.sub-title-link{
+    color:#db8d8d;
+}
+
+.sub-title-link:hover{
+    text-decoration: none;
+    color: #c48080;
+}
+
+.text{
+    font-family: tt_commons_light,sans-serif;
+    font-size: 1.5em;
+    margin-top: 1em;
+}
+
+#start{
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 1em;
+    width: 70%;
+    height:100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lime;
+}
+
+#start:hover{
+    filter: saturate(0.8);
+    cursor: pointer;
+}
+
+.pixel {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
+.pixel:hover {
+    cursor: pointer;
+}   
+
+
+/* For Mobile */
+@media screen and (max-width: 540px) {  
+    #me {
+        width: 200px;
+        height: 200px;
+        margin-top: 3em;
+    }
+    #title{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 2em;
+        margin-top: 1em;
+    }
+    .sub-title{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 1.2em;
+        margin-top: -1em;
+        width: 90%;
+    }
+    .text{
+        font-family: tt_commons_light,sans-serif;
+        font-size: 1.2em;
+        margin-top: 1em;
+    }
+
+}
+ 
