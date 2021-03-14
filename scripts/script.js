@@ -57,6 +57,12 @@ function newRound(){
     changeRGB(colorArray[0]);
 };
 
+/* Restart function */
+function restart(){
+    changeRGB('rgb(0,0,0)')
+    document.getElementById('colorContainer').innerHTML = (`<div id="start" class="text" onclick="newRound()" >Start</div>`)
+}
+
 /* CheckAns */
 function checkAns(ans){
     if (ans == 0){
@@ -68,6 +74,6 @@ function checkAns(ans){
         alert("Wrong Answer!");
         score = 0;
         updateScore(0);
-        newRound();
+        restart();
     };
 };
